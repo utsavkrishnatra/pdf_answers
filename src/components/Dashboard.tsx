@@ -14,11 +14,11 @@ import Link from 'next/link'
 import { format } from 'date-fns'
 import { Button } from './ui/button'
 import { useState } from 'react'
-// import { getUserSubscriptionPlan } from '@/lib/stripe'
+import { getUserSubscriptionPlan } from '@/lib/stripe'
 
-// interface PageProps {
-//   subscriptionPlan: Awaited<ReturnType<typeof getUserSubscriptionPlan>>
-// }
+interface PageProps {
+  subscriptionPlan: Awaited<ReturnType<typeof getUserSubscriptionPlan>>
+}
 
 const Dashboard = () => {
   const [currentlyDeletingFile, setCurrentlyDeletingFile] =
