@@ -34,7 +34,7 @@ const Dashboard = () => {
       onSuccess: () => {
         utils.getUserFiles.invalidate()
       },
-      onMutate({ id }) {
+      onMutate({ id }: { id: string | undefined }) {
         setCurrentlyDeletingFile(id)
       },
       onSettled() {
