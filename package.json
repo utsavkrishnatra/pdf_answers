@@ -18,7 +18,7 @@
     "@langchain/pinecone": "^0.0.7",
     "@mantine/hooks": "^7.10.0",
     "@pinecone-database/pinecone": "^2.2.1",
-    "@prisma/client": "^5.15.0",
+    "@prisma/client": "^5.3.1",
     "@radix-ui/react-avatar": "^1.0.4",
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-dropdown-menu": "^2.0.6",
@@ -59,7 +59,8 @@
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
     "uploadthing": "^6.10.4",
-    "zod": "^3.23.8"
+    "zod": "^3.23.8",
+    "prisma": "^5.3.1"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -70,7 +71,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.1.4",
     "postcss": "^8",
-    "prisma": "^5.15.0",
+    "prisma": "^5.3.1",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }
