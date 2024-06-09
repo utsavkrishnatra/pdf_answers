@@ -9,12 +9,13 @@ import { StreamingTextResponse } from 'ai';
 // import { BaseMessageLike } from '@langchain/core/messages';
 // import { MessageContent } from '@langchain/core/messages';
 import { AIMessageChunk } from '@langchain/core/messages';
+import { KindeUser } from '@kinde-oss/kinde-auth-nextjs/types';
 
 const POST = async (req: NextRequest) => {
   const body = await req.json();
 
   const { getUser } = getKindeServerSession();
-  const user = await getUser();
+  const user:KindeUser|null = await getUser();
   if (!user) return new Response('Unauthorized', { status: 401 });
   const { id: userId } = user;
 
