@@ -8,7 +8,7 @@ import { NextRequest } from 'next/server';
 import { StreamingTextResponse } from 'ai';
 // import { BaseMessageLike } from '@langchain/core/messages';
 // import { MessageContent } from '@langchain/core/messages';
-import { AIMessageChunk } from '@langchain/core/messages';
+// import { AIMessageChunk } from '@langchain/core/messages';
 import { KindeUser } from '@kinde-oss/kinde-auth-nextjs/types';
 
 const POST = async (req: NextRequest) => {
