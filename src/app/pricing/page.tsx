@@ -213,7 +213,7 @@ const Page = async () => {
                       {plan === 'Free' ? (
                         <Link
                           href={
-                            user ? '/dashboard' : '/sign-in'
+                            user!==null ? '/dashboard' : '/sign-in'
                           }
                           className={buttonVariants({
                             className: 'w-full',
