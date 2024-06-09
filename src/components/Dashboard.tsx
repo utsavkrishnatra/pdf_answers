@@ -20,12 +20,15 @@ interface PageProps {
   subscriptionPlan: Awaited<ReturnType<typeof getUserSubscriptionPlan>>
 }
 
-const Dashboard = () => {
+const Dashboard = ({subscriptionPlan}: PageProps) => {
   const [currentlyDeletingFile, setCurrentlyDeletingFile] =
     useState<string | null>(null)
 
   const utils = trpc.useContext()
+  
 
+  console.log("Is user subscribed or not:",subscriptionPlan.isSubscribed);
+  
   const { data: files, isLoading } =
     trpc.getUserFiles.useQuery()
 
@@ -49,7 +52,7 @@ const Dashboard = () => {
           My Files
         </h1>
 
-        <UploadButton  />
+        <UploadButton isSubscribed={subscriptionPlan.isSubscribed} />
       </div>
 
       {/* display all user files */}
