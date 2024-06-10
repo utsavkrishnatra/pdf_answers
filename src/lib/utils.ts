@@ -45,7 +45,7 @@ export function constructMetadata({
       title,
       description,
       images: [image],
-      creator: "@joshtriedcoding"
+      creator: "@utsavkrishnatra"
     },
     icons,
     metadataBase: new URL('https://pdf-answers.vercel.app'),
